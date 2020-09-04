@@ -13,7 +13,7 @@ public class Main {
 	
 	public static void main(String[] args) {
 		ZiFiHttpClient<JSONObject>  client = new ZiFiHttpClientImp<>(RegionEnum.CN, API_KEY, PASSWORD);
-		APIResponse<JSONObject> res = client.request("/v1.0/zetag/list?pageNo=1&pageSize=10", HttpMethod.GET, null, null);
+		APIResponse<JSONObject> res = client.request("/v1.0/inventoryCheck/details/7761293443671040?pageNo=1&pageSize=10&checkTime=1598594400000&dataType=1", HttpMethod.GET, null, null);
 		System.out.println(res.getResult().toJSONString());
 	}
 }

@@ -71,7 +71,7 @@ public class RequestHandler {
     	String resStr = null;
     	HttpRequest request =  HttpRequest.get(url).headers(headers)
     			.connectTimeout(connTimeout*1000)
-    			.readTimeout(readTimeout*1000)
+    			.readTimeout(readTimeout*1000).trustAllCerts().trustAllHosts()
     			;
 		if(HttpMethod.GET == method) {
 			resStr = request.body();

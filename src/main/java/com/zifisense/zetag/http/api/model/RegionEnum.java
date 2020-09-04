@@ -2,7 +2,7 @@ package com.zifisense.zetag.http.api.model;
 
 public enum RegionEnum {
 	
-	CN("http://192.168.0.26:20008");
+	CN("https://120.27.246.24");
 	
 	RegionEnum(String url) {
 		this.url = url;
