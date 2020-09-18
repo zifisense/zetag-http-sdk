@@ -2,7 +2,7 @@ package com.zifisense.zetag.http.api.model;
 
 public enum RegionEnum {
 	
-	CN("https://zetagos.zifisense.com:20008");
+	CN("https://zetagos.zifisense.com");
 	
 	RegionEnum(String url) {
 		this.url = url;
