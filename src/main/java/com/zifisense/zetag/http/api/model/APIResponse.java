@@ -24,6 +24,8 @@ public class APIResponse<T> {
 	private String msg;
 	
 	private T result;
+
+	private String requestId;
 	
 	public boolean isSuccess() {
 		return success;
@@ -52,7 +54,12 @@ public class APIResponse<T> {
 	public void setResult(T result) {
 		this.result = result;
 	}
-	
-	
-	
+
+	public String getRequestId() {
+		return requestId;
+	}
+
+	public void setRequestId(String requestId) {
+		this.requestId = requestId;
+	}
 }
